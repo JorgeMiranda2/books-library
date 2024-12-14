@@ -1,9 +1,5 @@
-
-Opciones Disponibles:
-markdown
-Copiar código
+# <em> Book app </em>
 ***********************************
-Elija la acción a través del número
 Opciones:
 1) Buscar libro por título (desde la API)
 2) Listar libros registrados (desde la base de datos)
@@ -12,7 +8,7 @@ Opciones:
 5) Listar libros por idioma (Desde la base de datos)
 0) Salir
 ***********************************
-Descripción de Funcionalidades:
+## Descripción de Funcionalidades:
 Buscar libro por título (API):
 Consulta una API externa para buscar información detallada sobre un libro utilizando su título como parámetro.
 
@@ -31,36 +27,34 @@ Permite filtrar libros según el idioma especificado, utilizando acrónimos como
 Salir:
 Finaliza la ejecución del programa.
 
-📋 Requisitos Previos
+## 📋 Requisitos Previos
 Java 17 o superior
 Maven para la gestión de dependencias
 PostgreSQL como base de datos
-⚙️ Instalación y Configuración
-Clona este repositorio:
 
-<<bash>>
-Copiar código
+## ⚙️ Instalación y Configuración
+Clona este repositorio:
+```
 git clone https://github.com/JorgeMiranda2/books-library.git
 Configura las credenciales de la base de datos en el archivo application.properties:
+```
 
-<<properties>>
+### properties
 Copiar código
+```
 spring.datasource.url=jdbc:postgresql://localhost:5432/bookDB  
 spring.datasource.username=tu_usuario  
-spring.datasource.password=tu_password  
-Compila y ejecuta el proyecto con Maven:
+spring.datasource.password=tu_password
+```  
 
-<<bash>>
-Copiar código
-mvn spring-boot:run  
-Accede al programa desde la terminal y sigue las opciones indicadas.
+## 🛠️ Tecnologías Utilizadas
+* Java
+* Spring Boot
+* PostgreSQL
+* API externa de libros
 
-🛠️ Tecnologías Utilizadas
-Java
-Spring Boot
-PostgreSQL
-API externa de libros
-📸 Ejemplos y Capturas de Pantalla
+## Ejemplos y Capturas de Pantalla
+
 🌟 Menú Principal
 ![menu principal](https://github.com/user-attachments/assets/277e45a3-46b5-4136-8e09-065d25bceae8)
 
@@ -70,7 +64,7 @@ API externa de libros
 🔍 Resultado de Búsqueda de Libro
 ![ejemplo](https://github.com/user-attachments/assets/dcbb4639-f93d-4745-89ad-e0c97978b1c9)
 
-📂 Estructura del Proyecto
+## 📂 Estructura del Proyecto
 css
 Copiar código
 src/  
